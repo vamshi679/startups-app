@@ -1,7 +1,8 @@
 # Startups App
 
-## Reference  
+## References  
 https://www.youtube.com/watch?v=Zq5fmkH0T78
+https://github.com/adrianhajdin/yc_directory
 
 A modern Next.js 15.3 application with React 19, TypeScript, Tailwind CSS, and Sanity CMS integration.
 
@@ -69,3 +70,10 @@ Deploy your Next.js app using [Vercel](https://vercel.com/new?utm_medium=default
 ## License
 
 This project is MIT licensed.
+
+
+## Commands used 
+
+npx sanity@latest schema extract --path=./sanity/extract.json
+npx sanity@latest typegen generate
+npm i server-only

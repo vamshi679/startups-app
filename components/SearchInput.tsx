@@ -8,7 +8,8 @@ export default function Page({
   searchParams?: { [key: string]: string | string[] | undefined };
 }) {
   const query = searchParams?.query;
-  console.log("SearchInput qurey params:", query);
+  const params = {search : query || null};
+  console.log("SearchInput qurey params:", query, params);
   return (
     <>
       <div className="max-w-4xl mx-auto px-4 py-4 text-center flex flex-col items-center justify-center">
@@ -32,10 +33,14 @@ export default function Page({
   );
 }
 
-// const SearchInput = async ({ searchParams }: { searchParams: { query?: string } }) => {
-//     const query = await searchParams?.query || "test";
-//     console.log("SearchInput query:", query);
-  
-// };
 
-// export default SearchInput;
+// const SearchInput = async ({params} : Promise<{query: string}>) => {
+//   const query = (await params).query;
+//
+//   return (
+//
+//       <div>
+//         this is search input component {query}
+//       </div>
+//   )
+// }

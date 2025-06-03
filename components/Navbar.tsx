@@ -9,7 +9,11 @@ const Navbar = async () => {
   return (
     <nav className="bg-white shadow-sm font-sans">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-gray-900">Startups App</h1>
+        <h1 className="text-2xl font-bold text-gray-900">
+          <Link href="/">
+            Startups App
+          </Link>
+        </h1>
         <ul className="flex items-center space-x-4">
           <li>
             <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium transition">
