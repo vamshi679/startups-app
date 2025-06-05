@@ -125,4 +125,3 @@
 .bg {
   @apply w-full h-full bg-gradient-to-b from-white to-gray-50;
 }
-

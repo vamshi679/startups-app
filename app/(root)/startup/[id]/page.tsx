@@ -7,9 +7,12 @@ import Image from "next/image";
 import { formatDate } from "@/lib/utils";
 
 import markdownit from "markdown-it";
+import {Skeleton} from "@/components/ui/skeleton";
+import View from "@/components/View";
 
 const md = markdownit();
 
+// @ts-ignore
 const Page = async ({params} : Promise<{id: string}>) => {
     const id = (await params).id;
     console.log("id:", id);
@@ -91,9 +94,9 @@ const Page = async ({params} : Promise<{id: string}>) => {
                     {/*    </div>*/}
                     {/*)}*/}
 
-                    {/*<Suspense fallback={<Skeleton className="mt-12" />}>*/}
-                    {/*    <View id={id} />*/}
-                    {/*</Suspense>*/}
+                    <Suspense fallback={<Skeleton className="mt-12" />}>
+                        <View id={id} />
+                    </Suspense>
                 </div>
             </section>
         </>
