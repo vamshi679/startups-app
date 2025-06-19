@@ -77,3 +77,13 @@ This project is MIT licensed.
 npx sanity@latest schema extract --path=./sanity/extract.json
 npx sanity@latest typegen generate
 npm i server-only
+
+
+npx @sentry/wizard@latest -i nextjs --saas --org vamshi-wq --project javascript-nextjs
+    
+http://localhost:3000/studio/vision
+
+
+SENTRY_AUTH_TOKEN=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
+
+"/sentry-example-page"

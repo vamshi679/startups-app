@@ -94,7 +94,7 @@ export const Cardstack = async () => {
       <div className="text-xl font-semibold mb-4">All recent posts</div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {posts_new.map((post: StartupTypeCard, index: number) => (
-          <Card key={post._id} className="bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+          <Card key={post._id} className="bg-white shadow-sm hover:shadow-lg transition-shadow duration-300 hover:bg-blue-100 ">
             <CardHeader className="text-sm text-gray-500 flex items-center justify-between">
                 <Badge variant="outline" className="text-sm text-orange-600 font-semibold text-right">{formatDate(post._createdAt)}</Badge>
                 <div className="flex items-center text-orange-600">

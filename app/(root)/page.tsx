@@ -6,7 +6,7 @@ import { auth } from "@/auth";
 export default async function Home() {
 
     const session = await auth();
-    console.log("Home", session);
+    // console.log("Home", session);
   return (
     <>
       <HeroSection/>
