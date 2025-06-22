@@ -29,6 +29,8 @@ const StartupForm = () => {
                 pitch,
             };
 
+            console.log("formValues printed here:::",formValues)
+
             await formSchema.parseAsync(formValues);
 
             const result = await createPitch(prevState, formData, pitch);
@@ -46,6 +48,7 @@ const StartupForm = () => {
                 router.push(`/startup/${result._id}`);
             }
 
+            return result;
             return result;
         } catch (error) {
             if (error instanceof z.ZodError) {
