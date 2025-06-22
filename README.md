@@ -14,6 +14,7 @@ A modern Next.js 15.3 application with React 19, TypeScript, Tailwind CSS, and S
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Sanity CMS](https://www.sanity.io/)
 - [Next Auth](https://next-auth.js.org/) (Beta)
+- [Sanity project Dashboard](https://www.sanity.io/organizations/)
 
 ## Getting Started
 

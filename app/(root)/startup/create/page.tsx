@@ -7,7 +7,10 @@ const Page = async () => {
 
     // only authenticated users can access this page app will redirect to home page
     const session = await auth();
-    if (!session) redirect("/");
+    if (!session) {
+        // toast.success("Please login to create Your startup pitch.");
+        redirect("/")
+    };
 
     return (
         <>

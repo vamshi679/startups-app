@@ -23,7 +23,7 @@ const Navbar = async () => {
         <ul className="flex items-center space-x-4">
           <li>
             <Button variant="outline" asChild>
-              <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium transition">
+              <Link href="/startup/create" className="text-gray-700 hover:text-blue-600 font-medium transition">
                 Create
               </Link>
             </Button>
@@ -63,7 +63,7 @@ const Navbar = async () => {
 
                         <div className="border-t border-gray-200">
                           <Link
-                              href={`/user/${session.user.id ?? ''}`}
+                              href={`/user/${session.id ?? ''}`}
                               className="flex items-center space-x-2 px-3 py-2 hover:bg-gray-100 rounded-md transition"
                           >
                             <span>Your Profile</span>
