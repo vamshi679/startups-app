@@ -2,7 +2,7 @@ import Form from "next/form";
 import ResetButton from "./ResetButton";
 import { Button } from "./ui/button";
 
-export default function Page({
+export default function SearchInput({
   searchParams,
 }: {
   searchParams?: { [key: string]: string | string[] | undefined };
@@ -22,10 +22,11 @@ export default function Page({
                 placeholder="Search your tools..."
                 className="custom-input"
             />
-            { query && <ResetButton/>}
-            <Button variant="default" type="submit" className="my-3 p-6 w-md sm:w-auto bg-blue-600 text-white hover:bg-blue-700">
-                Search
-            </Button>
+            { query ? <ResetButton/> : (
+                <Button variant="default" type="submit" className="my-3 p-6 w-md sm:w-auto bg-blue-600 text-white hover:bg-blue-700">
+                  Search
+                </Button>
+            )}
           </Form>
         </div>
       </div>
@@ -33,14 +34,3 @@ export default function Page({
   );
 }
 
-
-// const SearchInput = async ({params} : Promise<{query: string}>) => {
-//   const query = (await params).query;
-//
-//   return (
-//
-//       <div>
-//         this is search input component {query}
-//       </div>
-//   )
-// }

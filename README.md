@@ -83,6 +83,7 @@ npm i server-only
 npx @sentry/wizard@latest -i nextjs --saas --org vamshi-wq --project javascript-nextjs
     
 http://localhost:3000/studio/vision
+https://cdn.pixabay.com/photo/2022/01/26/00/40/insect-6967602_640.jpg
 
 
 SENTRY_AUTH_TOKEN=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
